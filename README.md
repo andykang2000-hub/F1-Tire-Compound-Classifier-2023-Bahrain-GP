@@ -133,20 +133,6 @@ f1-tyre-classifier/
 
 ---
 
-## Portfolio Context
-
-This is **Project 3** of a 5-project F1 data science portfolio:
-
-| # | Project | Skills | Genuine Value-Add |
-|---|---------|--------|-------------------|
-| ✅ 1 | [Telemetry Analysis](https://github.com/YOUR_USERNAME/f1-telemetry-analysis) | FastF1, matplotlib | Public corner-by-corner breakdown |
-| ✅ 2 | [Circuit Dominance Map](https://github.com/YOUR_USERNAME/f1-dominance-map) | Geospatial, multi-driver | PER paradox: more track ≠ faster lap |
-| ✅ 3 | Tire Compound Classifier (this) | ML, synthetic data, calibration | Rival stint life — what teams cannot see |
-| 4 | Pit Stop Strategy Optimizer | Optimisation, simulation | Undercut threat quantification |
-| 5 | Qualifying Lap Predictor | Regression, feature engineering | TBD |
-
----
-
 ## Data Source
 
 [FastF1](https://github.com/theOehrly/Fast-F1) — official F1 timing feed.
