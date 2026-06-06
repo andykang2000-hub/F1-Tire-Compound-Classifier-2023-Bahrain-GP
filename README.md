@@ -12,17 +12,8 @@
 
 This project builds a machine learning classifier that predicts which tire compound an F1 driver is running — **without being told directly** — using only lap telemetry behavior. It then adds two genuine value-add features: **prediction confidence intervals** and a **stint life predictor** that estimates how many laps a rival has remaining in their current stint.
 
-### Critical Self-Evaluation
-
-Before building, three questions were asked:
-
-**Is the cause-effect relationship right?**
-Yes — tire compound genuinely *causes* the telemetry patterns we measure. A SOFT tire produces different degradation rates, sector times, and lap time variance than a HARD tire. This is a valid causal chain, unlike weather prediction where humidity is a *consequence* of rain, not a predictor.
-
-**Is this meaningful? How is it different from what engineers already have?**
 F1 teams can observe their own tire data but **cannot directly observe rival tire age, compound, or remaining stint life** during a race — unless a pit stop happens visibly. A model that infers compound from publicly-visible lap time behavior is genuinely novel. The stint life predictor (±2 laps for SOFT, ±4 laps for HARD) gives strategy engineers an intelligence advantage in three scenarios: undercut timing, overcut decisions, and safety car window assessment.
 
-**What are the honest limitations?**
 The model is trained on one race. Different circuits, ambient temperatures, and tire allocation strategies will affect generalization. Multi-race training data is needed for production use.
 
 ---
